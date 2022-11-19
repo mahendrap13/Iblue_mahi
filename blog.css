@@ -33,6 +33,13 @@
   color: black;
   position: fixed;
 }
+.active{
+  color: #4064D7;
+  font-weight: 700;
+}
+.active i{
+  color: #4064d7;
+}
 
 a {
   color: white;
