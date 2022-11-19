@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------------display button--------------------------------- */
+.scroll img {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4064d7;
+  position: absolute;
+  bottom: 30px;
+  position: fixed;
+  right: 30px;
+}
+
+.setting a i {
+  background-color: white;
+  padding: 13px;
+  font-size: 25px;
+  position: absolute;
+  top: 150px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.setting a {
+  color: black;
+  position: fixed;
+}
+
+/* ----------------------------------header-------------------------------------- */
+
+a {
+  color: white;
+}
+
+header {
+  color: grey;
+}
+
+header .hed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 55px;
+  padding: 0 10%;
+}
+header .hed p {
+  font-size: 14px;
+}
+
+header .hed ul {
+  display: flex;
+  /* background-color: #101010; */
+}
+header .hed ul li .afr {
+  position: relative;
+}
+
+header .hed ul li .afr::after {
+  height: 23px;
+  width: 1.5px;
+  content: "";
+  top: -2px;
+  right: -10px;
+  background-color: rgba(128, 128, 128, 0.493);
+  position: absolute;
+}
+
+header .hed ul li {
+  list-style: none;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+header .hed ul li:hover a {
+  color: black;
+}
+
+header .hed ul li a {
+  color: black;
+  font-size: 14px;
+}
+
+header .hed ul li a {
+  color: grey;
+}
+
+/* ------------------------------------------------------navbar------------------------------------ */
+
+nav .small {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(84, 132, 184);
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 18px;
+  list-style: none;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+nav ul li:hover a {
+  color: #4064d7;
+}
+
+nav i:hover {
+  color: #4064d7;
+}
+
+nav ul li a {
+  color: black;
+}
+
+nav i {
+  color: black;
+  margin-left: 25px;
+}
+
+/* ---------------------------------------------navbar media quary------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* nav ul {
+      display: none;
+    } */
+
+  header {
+    display: none;
+  }
+  nav .large {
+    display: none;
+  }
+  nav {
+    padding: 0 5px;
+  }
+  nav .logo img {
+    width: 100%;
+  }
+  nav .small {
+    display: block;
+    display: flex;
+  }
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li a i {
+    margin: 0;
+    padding: 12px;
+  }
+  nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* -------------------------------------------section1--------------------------- */
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.674), rgba(0, 0, 0, 0.674)),
+    url(header-inner-1.jpg);
+  height: 330px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 130px 0;
+}
+
+/* -------------------------------------------section1 media quary--------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section1 {
+    height: auto;
+  }
+
+  .section1 h1 {
+    font-size: 18px;
+  }
+
+  .section1 p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+/* -------------------------------------------section2--------------------------- */
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+  height: 80px;
+  /* background-color: red; */
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.section2 ul {
+  display: flex;
+  align-items: center;
+}
+
+.section2 h1 {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.section2 ul li {
+  list-style: none;
+  margin: 0 6px;
+  font-size: 13px;
+}
+
+.section2 ul li a {
+  color: grey;
+}
+
+.section2 ul li a i {
+  margin-right: 10px;
+}
+
+.section2 ul li .bl {
+  color: #4064d7;
+}
+
+/* -------------------------------------------section2 media quary--------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section2 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    height: auto;
+  }
+}
+
+/* -------------------------------------------section3 --------------------------------------- */
+
+.section3 {
+  height: 47vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 250px;
+}
+.section3 p {
+  font-size: 22px;
+}
+
+/* -------------------------------------------section3 media quary--------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section3 {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .section3 p {
+    font-size: 20px;
+  }
+}
+
+/* -------------------------------------------section5-------------------------------- */
+.section5 {
+  display: flex;
+  padding: 160px 100px;
+  background-color: #4064d7;
+}
+.section5 div {
+  width: 48%;
+  background-color: white;
+  margin: 15px;
+  /* height: auto; */
+}
+.section5 .div1 img {
+  width: 100%;
+  border: 30px solid white;
+}
+.section5 .text {
+  padding: 60px 60px 40px 60px;
+  height: 550px;
+}
+.section5 .text h1 {
+  font-size: 35px;
+  margin: 0 0 20px 10px;
+}
+.section5 .text .poi {
+  font-size: 16px;
+  color: grey;
+  margin: 0 30px 20px 10px;
+}
+.section5 .text h5 {
+  font-size: 23px;
+  font-weight: 300;
+  margin: 0 30px 30px 0;
+}
+.section5 .text p {
+  color: grey;
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+/* -------------------------------------------------section5 media quary---------------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section5 {
+    height: auto;
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+  .section5 div {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+  }
+  .section5 .text h1 {
+    font-size: 25px;
+    margin: 0 0 20px 5px;
+  }
+  .section5 .text {
+    padding: 20px 25px;
+  }
+
+  .section5 .text .poi {
+    font-size: 17px;
+    margin: 0 0px 15px 5px;
+  }
+  .section5 .text h5 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0px 15px 0;
+  }
+  .section5 .text p {
+    margin: 15px 0;
+    line-height: normal;
+  }
+}
+
+/* ------------------------------------------------section 6-------------------------------------- */
+
+.section6 {
+  height: 120vh;
+  background-image: url(/IMAGE/pattren30.jpg);
+  padding: 10% 7%;
+  color: white;
+  text-align: center;
+}
+
+.section6 label {
+  color: grey;
+  font-size: 20px;
+}
+.section6 h1 {
+  font-size: 40px;
+  padding: 20px 350px 70px 350px;
+  line-height: 50px;
+}
+
+.section6 div {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+.section6 .divs {
+  margin-top: 30px;
+}
+.section6 .divs div {
+  width: 600px;
+  padding: 50px;
+  height: 220px;
+  margin: 15px;
+  transition: all 0.3s;
+}
+.section6 .divs div:hover {
+  background-color: #4064d7;
+}
+.section6 .divs div:hover i {
+  color: white;
+}
+.section6 .divs div:hover label {
+  color: white;
+}
+.section6 .divs div:hover p {
+  color: white;
+}
+
+.section6 .divs i {
+  font-size: 50px;
+  padding: 0 40px 0 0;
+  color: grey;
+}
+
+.section6 .divs span label {
+  font-size: 20px;
+}
+
+.section6 .divs span p {
+  font-size: 15px;
+  padding: 25px 0 0 0;
+  line-height: 24px;
+  color: grey;
+}
+
+.camera {
+  background-color: #4064d7;
+}
+
+.divs .camera i {
+  color: white;
+}
+.divs .camera span label {
+  color: white;
+}
+.divs .camera span p {
+  color: white;
+}
+
+/* -------------------------------------------------------section6 media quary------------------ */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section6 {
+    height: auto;
+    padding: 30px 10px;
+  }
+  .section6 div {
+    flex-direction: column;
+    /* margin: 0; */
+  }
+  .section6 h1 {
+    font-size: 37px;
+    padding: 20px 10px;
+    line-height: 50px;
+  }
+  .section6 .divs div {
+    width: 100%;
+    padding: 40px;
+    height: 250px;
+    margin: 0;
+    transition: all 0.3s;
+  }
+}
+
+/* ----------------------------------------------section7=---------------------------------- */
+.section7 {
+  height: 90vh;
+  display: flex;
+  padding: 130px 40px 160px 110px;
+}
+.section7 div {
+  width: 47%;
+}
+.section7 .divr video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.section7 .divl {
+  padding: 20px;
+}
+.section7 .divr {
+  padding: 0;
+}
+.section7 .divl h1 {
+  font-size: 35px;
+  line-height: 35px;
+  color: #272727;
+  margin-bottom: 20px;
+}
+.section7 .divl label {
+  font-size: 15px;
+  line-height: 22px;
+}
+.section7 .divl p {
+  font-size: 16px;
+  margin: 40px 0 90px 0;
+  line-height: 22px;
+  color: grey;
+}
+.section7 .divl a {
+  padding: 12px 35px;
+  background-color: #4064d7;
+  border-radius: 2rem;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+/* ----------------------------------------------section7 media quary---------------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section7 {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 2px;
+  }
+  .section7 div {
+    width: 100%;
+    margin: 0;
+  }
+  .section7 .divl h1 {
+    font-size: 35px;
+    line-height: normal;
+    color: #272727;
+    margin-bottom: 20px;
+  }
+  .section7 .divl label {
+    font-size: 15px;
+  }
+  .section7 .divl p {
+    font-size: 14.5px;
+  }
+  .section7 .divr {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section7 .divr video {
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  .section7 .divl a {
+    padding: 13px 33px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .setting {
+    display: none;
+  }
+}
+
+/* --------------------------------------.section4------------------------------------------ */
+
+.section4 {
+  background-color: #4064d7;
+  height: 28vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.section4 img {
+  width: 15%;
+}
+
+/* --------------------------------------.section4 media quary------------------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section4 {
+    height: 20vh;
+    padding: 0 10px;
+  }
+
+  .section4 img {
+    width: 18%;
+  }
+}
+
+/* -----------------------------------footer--------------------------- */
+footer {
+  display: flex;
+  background-color: #101010;
+  justify-content: space-around;
+  height: 70vh;
+  padding: 150px 120px;
+  color: grey;
+}
+
+footer div h3 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+footer .d1 img {
+  margin-bottom: 30px;
+}
+
+footer div {
+  width: 400px;
+  padding: 20px;
+  /* margin: 10px; */
+}
+
+footer div p {
+  margin: 15px 0;
+  line-height: 20px;
+}
+
+footer div a {
+  color: grey;
+  font-size: 14px;
+}
+
+footer div a:hover {
+  color: white;
+}
+
+footer .d4 ul {
+  display: flex;
+}
+
+footer .d4 ul li {
+  list-style: none;
+  margin: 10px 3px;
+}
+
+footer .d4 ul .bli a i {
+  color: #4064d7;
+}
+
+footer .d4 ul li a i {
+  color: white;
+  transition: all 0.3s;
+  font-size: 15px;
+  margin: 10px 9px;
+}
+
+footer .d4 ul li a i:hover {
+  color: #4064d7;
+}
+
+footer .d3 a i {
+  margin-right: 6px;
+}
+
+footer .d3 a {
+  transition: all 0.3s;
+}
+
+/* -----------------------------------footer media quary--------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  .bottom p {
+    color: white;
+    font-size: 12px;
+  }
+}
+
+/* ----------------------------------------bottom--------------------------- */
+
+.bottom {
+  height: 9vh;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-size: 14px;
+}
+
+.bottom a {
+  color: white;
+}
+
+.bottom a:hover {
+  color: red;
+}

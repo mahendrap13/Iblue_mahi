@@ -1,0 +1,573 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------------display button--------------------------------- */
+.scroll img {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4064d7;
+  position: absolute;
+  bottom: 30px;
+  position: fixed;
+  right: 30px;
+}
+
+.setting a i {
+  background-color: white;
+  padding: 13px;
+  font-size: 25px;
+  position: absolute;
+  top: 150px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.setting a {
+  color: black;
+  position: fixed;
+}
+
+/* ----------------------------------header-------------------------------------- */
+
+a {
+  color: white;
+}
+
+header {
+  color: grey;
+}
+
+header .hed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 55px;
+  padding: 0 10%;
+}
+header .hed p {
+  font-size: 14px;
+}
+
+header .hed ul {
+  display: flex;
+}
+
+header .hed ul li {
+  list-style: none;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+header .hed ul li:hover a {
+  color: black;
+}
+
+header .hed ul li a {
+  color: black;
+  font-size: 14px;
+}
+
+header .hed ul li a {
+  color: grey;
+}
+header .hed ul li .afr {
+  position: relative;
+}
+
+header .hed ul li .afr::after {
+  height: 23px;
+  width: 1.5px;
+  content: "";
+  top: -2px;
+  right: -10px;
+  background-color: rgba(128, 128, 128, 0.493);
+  position: absolute;
+}
+
+/* ------------------------------------------------------navbar------------------------------------ */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(84, 132, 184);
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 18px;
+  list-style: none;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+nav ul li:hover a {
+  color: #4064d7;
+}
+
+nav i:hover {
+  color: #4064d7;
+}
+
+nav ul li a {
+  color: black;
+}
+
+nav i {
+  color: black;
+  margin-left: 25px;
+}
+nav .small {
+  display: none;
+}
+
+/* ---------------------------------------------navbar media quary------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    display: none;
+  }
+  nav .large {
+    display: none;
+  }
+  nav {
+    padding: 0 5px;
+  }
+  nav .logo img {
+    width: 100%;
+  }
+  nav .small {
+    display: block;
+    display: flex;
+  }
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li a i {
+    margin: 0;
+    padding: 12px;
+  }
+  nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* -------------------------------------------section1--------------------------- */
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.674), rgba(0, 0, 0, 0.674)),
+    url(header-inner-1.jpg);
+  height: 330px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 130px 0;
+}
+
+/* -------------------------------------------section1 media quary--------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section1 {
+    height: auto;
+  }
+
+  .section1 h1 {
+    font-size: 18px;
+  }
+
+  .section1 p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+/* -------------------------------------------section2--------------------------- */
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+  height: 80px;
+  /* background-color: red; */
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.section2 ul {
+  display: flex;
+  align-items: center;
+}
+
+.section2 h1 {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.section2 ul li {
+  list-style: none;
+  margin: 0 6px;
+  font-size: 13px;
+}
+
+.section2 ul li a {
+  color: grey;
+}
+
+.section2 ul li a i {
+  margin-right: 10px;
+}
+
+.section2 ul li .bl {
+  color: #4064d7;
+}
+
+/* -------------------------------------------section2 media quary--------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section2 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    height: auto;
+  }
+}
+
+/* --------------------------------------------.section3-------------------------------------- */
+
+.section3 {
+  height: 110vh;
+  /* color: black; */
+  padding: 100px 100px;
+}
+
+.section3 .ankar a {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.737);
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  margin: 4px;
+}
+
+.section3 .ankar .bty {
+  background-color: #4064d7;
+  color: black;
+}
+
+.section3 .ankar {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+}
+.section3 .ankar div {
+  position: relative;
+}
+.section3 .ankar .up {
+  background-color: #4064d7;
+  width: 35px;
+  height: 30px;
+  clip-path: polygon(100% 0, 100% 86%, 70% 87%, 50% 100%, 30% 87%, 0 86%, 0 0);
+  border-radius: 3px;
+  position: absolute;
+  text-align: center;
+  padding-top: 3px;
+  bottom: 0;
+  left: 30%;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.section3 .ankar .pop:hover .up {
+  bottom: 30px;
+  /* margin-bottom: 30px; */
+  left: 30%;
+  opacity: 1;
+}
+
+.section3 .main {
+  padding: 40px 0;
+}
+
+.section3 .main .div1,
+.section3 .main .div2 {
+  display: flex;
+  width: 100%;
+}
+
+.section3 .main .div1 div,
+.section3 .main .div2 div {
+  margin: 10px;
+}
+
+.section3 .main div img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.section3 .main .div1 div .divimg {
+  position: relative;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.section3 .main .div1 div .btn {
+  width: 100%;
+  height: 60px;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282727;
+  text-align: center;
+  position: absolute;
+  bottom: -6px;
+  left: -10px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.section3 .main .div1 div .btn a {
+  width: 85px;
+  height: 28px;
+  /* height: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  /* margin: 5px; */
+  /* margin: 10px ; */
+  background-color: #4064d7;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.section3 .main .div1 div .divimg:hover .btn {
+  height: 60px;
+  opacity: 1;
+}
+
+.section3 .main .div1 div .divimg .btn .an1 {
+  margin: 20px 30px 0 0;
+}
+
+.section3 .main .div1 div .divimg .btn .an2 {
+  margin: 20px 0 0 30px;
+}
+
+.section3 .main .div1 div .divimg:hover .btn .an1 {
+  /* margin: 20px 30px 0 0; */
+  margin: 10px;
+}
+
+.section3 .main .div1 div .divimg:hover .btn .an2 {
+  /* margin: 20px 0 0 30px; */
+  margin: 10px;
+}
+
+.section3 .main .div1 div .divimg:hover .btn a {
+  opacity: 1;
+}
+
+.section3 .main .div1 div .divimg:hover img {
+  transform: translateY(-60px);
+}
+
+.section3 .main .div1 div h5 {
+  padding: 5px 10px;
+  color: #474747;
+}
+.section3 .main .div1 div label {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: grey;
+}
+
+/* --------------------------------------.section3 media quary------------------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section3 {
+    padding: 10px 0;
+    height: auto;
+  }
+  .section3 .main .div1,
+  .section3 .main .div2 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .setting {
+    display: none;
+  }
+  .section3 .ankar a {
+    padding: 9px 10px;
+    font-size: 10px;
+    margin: 40px 5px 0 5px;
+  }
+  .section3 .ankar {
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .section3 .main {
+    padding: 20px 0;
+  }
+}
+
+/* --------------------------------------.section4------------------------------------------ */
+
+.section4 {
+  background-color: #4064d7;
+  height: 28vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.section4 img {
+  width: 15%;
+}
+
+/* --------------------------------------.section4 media quary------------------------------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section4 {
+    height: 20vh;
+    padding: 0 10px;
+  }
+
+  .section4 img {
+    width: 18%;
+  }
+}
+
+/* -----------------------------------footer--------------------------- */
+footer {
+  display: flex;
+  background-color: #101010;
+  justify-content: space-around;
+  height: 70vh;
+  padding: 150px 120px;
+  color: grey;
+}
+
+footer div h3 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+footer .d1 img {
+  margin-bottom: 30px;
+}
+
+footer div {
+  width: 400px;
+  padding: 20px;
+  /* margin: 10px; */
+}
+
+footer div p {
+  margin: 15px 0;
+  line-height: 20px;
+}
+
+footer div a {
+  color: grey;
+  font-size: 14px;
+}
+
+footer div a:hover {
+  color: white;
+}
+
+footer .d4 ul {
+  display: flex;
+}
+
+footer .d4 ul li {
+  list-style: none;
+  margin: 10px 3px;
+}
+
+footer .d4 ul .bli a i {
+  color: #4064d7;
+}
+
+footer .d4 ul li a i {
+  color: white;
+  transition: all 0.3s;
+  font-size: 15px;
+  margin: 10px 9px;
+}
+
+footer .d4 ul li a i:hover {
+  color: #4064d7;
+}
+
+footer .d3 a i {
+  margin-right: 6px;
+}
+
+footer .d3 a {
+  transition: all 0.3s;
+}
+
+/* -----------------------------------footer media quary--------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  .bottom p {
+    color: white;
+    font-size: 12px;
+  }
+  .setting {
+    display: none;
+  }
+}
+
+/* ----------------------------------------bottom--------------------------- */
+
+.bottom {
+  height: 9vh;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-size: 14px;
+}
+
+.bottom a {
+  color: white;
+}
+
+.bottom a:hover {
+  color: red;
+}
