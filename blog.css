@@ -98,7 +98,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 85px;
-  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.715); */
+  box-shadow: 0px 1px 5px rgb(84 132 184);
   padding: 0 9%;
   background-color: white;
   position: sticky;
