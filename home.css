@@ -177,7 +177,8 @@ a {
   }
 
   .mid-text {
-    position: relative;
+    
+    Padding:20% 0 0 0:
   }
 
   .mid-text .ab {
@@ -186,8 +187,8 @@ a {
   }
 
   .mid-text span button {
-    height: 28px;
-    width: 100px;
+    height: 35px;
+    width: 130px;
     font-size: 9px;
     margin: 0;
     padding: 0;
