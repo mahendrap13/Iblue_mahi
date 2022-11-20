@@ -465,7 +465,7 @@ nav i {
     width: 100%;
     padding: 40px;
     height: 250px;
-    margin: 0;
+    margin: 7px 0;
     transition: all 0.3s;
   }
 }
@@ -543,7 +543,7 @@ nav i {
     height: auto;
     overflow: hidden;
     width: 100%;
-    margin: 0;
+    margin: 30px 0;
     padding: 0;
   }
   .section7 .divr video {
